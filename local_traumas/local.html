@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="local.css">
+    <title>local dos traumas</title>
+</head>
+    <body>
+
+        <div class="centro">
+            <div class="cabecalho">
+                <img src="menu.png" width="350px" class="menu">
+            </div>
+          
+                <div class="titulo">
+                    <strong>Local dos Traumas</strong>
+                </div>
+        </div>
+
+            <div class="principal">
+                <br>
+                <div class="paci">
+                    <strong>Paciente é:<strong> 
+                </div>
+        <br>
+
+        <body>
+   
+            <div class="forms">
+                 <!-- Botões para trocar a imagem -->
+                 <button onclick="mostrarImagem('imagem1')">Adulto</button>
+                 <button onclick="mostrarImagem('imagem2')">Criança</button>
+            </div>
+
+            <!-- Imagens -->
+            <img id="imagem1" class="imagem" src="boneco n se.png" alt="Imagem 1">
+            <img id="imagem2" class="imagem" src="pia.png" alt="Imagem 2">
+
+            
+            <script>
+                function mostrarImagem(id) {
+                    // Pega todas as imagens
+                    var imagens = document.querySelectorAll('.imagem');
+        
+                    // Esconde todas as imagens
+                    for(var i = 0; i < imagens.length; i++) {
+                        imagens[i].style.display = 'none';
+                    }
+        
+                    // Mostra a imagem específica
+                    document.getElementById(id).style.display = 'block';
+                }
+            </script>
+
+            <div class="meu">
+                <area onmouseleave="Esconder();" onmouseover="MostrarTabela('tabela_cb');" shape="circle" coords="763,235" >
+                <area onmouseleave="Esconder();" onmouseover="MostrarTabela('tabela_om');" shape="circle" coords="297,413,20" >
+            </div>
+
+            <div class="tabela_cb" id="tabela_cb"> 
+                kkkkkkkkk
+            </div>
+
+            <div class="tabela_om" id="tabela_om"> 
+                kkkkkkkkk
+            </div>
+
+            <script>
+                function Esconder() {
+                    tabela_cb.style.display = "none";
+                    tabela_om.style.display = "none";
+                }
+                function MostrarTabela() {
+                    if (tabela_cb == "tabela_cb") {
+                        tabela_cb.style.display = "block";
+                    }
+                    if (tabela_om == "tabela_om") {
+                        tabela_om.style.display = "block";
+                    }
+                }
+            </script>
+
+         </body>
+        </html>
+
+</html>
+</body>
+
+</html>
