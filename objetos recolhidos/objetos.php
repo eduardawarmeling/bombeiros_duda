@@ -23,7 +23,7 @@
         <form action="inserir.php" method="post">
         <div class="caixa-prox">
             <input type="text" class="caixa-larga" name="objetos" placeholder="Digite os objetos recolhidos...">
-            <input type="submit" class="button" name="objetos"  /> 
+            <button type="submit" class="prox">Enviar</button>
         </div>
         </form>
     </div>

@@ -1,23 +1,14 @@
 <?php
+session_start();
+    include("conecta.php");
+    $FK_IdOcorrencia = 17; //$_SESSION["id"];
 
-$Observacoes = $_POST["Observacoes"];
+    $Observacoes  = $_POST["Observacoes"];
+  
 
-include("conecta.php");
+    $comando = $pdo->prepare("INSERT INTO obj_recolhidos VALUES ($FK_IdOcorrencia, '$Observacoes')");
+    $resultado = $comando->execute();
 
-// Preparar a consulta SQL com um parâmetro
-$comando = $pdo->prepare("INSERT INTO obs_importantes (Observacoes) VALUES (:Observacoes)");
-
-// Vincular o valor do parâmetro
-$comando->bindParam(':Observacoes', $Observacoes);
-
-// Executar a consulta
-$resultado = $comando->execute();
-
-// Verificar se a consulta foi bem-sucedida
-if ($resultado) {
-    echo "{\"resultado\":1}";
-} else {
-    echo "{\"resultado\":0}";
-}
+    echo ("{\"resposta\":1}");
 
 ?>
