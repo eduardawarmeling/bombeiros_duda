@@ -64,7 +64,7 @@ body {
   position: relative;/* O z-index só funciona em elementos posicionados */
 }
 
-.prox {
+button {
   width: 150px;
   height: 30px;
   background-color: #0f1d85;
@@ -140,7 +140,7 @@ body {
   position: relative;
 }
 
-.prox {
+button{
   width: 100%; /* Para ocupar toda a largura */
   height: 30px;
   background-color: #0f1d85;

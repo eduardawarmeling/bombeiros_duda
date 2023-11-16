@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sinais.css">
     <title>Sinais vitais</title>
-    <script src="jquery-1.8.2.min.js"></script>
 </head>
 
 <body>
@@ -29,13 +28,16 @@
             <br> 
             Perfusão:
             <br>
-            <input type="radio" name="a"> &nbsp; > 2 seg
+            <input type="radio" name="a" value=">2seg"> &nbsp; > 2 seg
             <br>
-            <input type="radio" name="a"> &nbsp; < 2 seg <br>
-                <input type="radio" name="b"> &nbsp; Anormal
-                <br>
-                <input type="radio" name="b"> &nbsp; Normal
+            <input type="radio" name="a" value="<2seg"> &nbsp; < 2 seg 
+            <br>
+
+            <input type="radio" name="b" value="Anormal"> &nbsp; Anormal
+            <br>
+            <input type="radio" name="b" value="Normal"> &nbsp; Normal
             <br> <br>
+            
             HGT:<input type="text" name="hgt" maxlength="10" class="hgt">
             <br>
             Respiração:<input type="text" name="resp" maxlength="10" class="resp">M.R.M

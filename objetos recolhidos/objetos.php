@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="observa.css">
-    <title>Observações Importantes</title>
+    <link rel="stylesheet" href="objetos.css">
 </head>
 <body>
+   
     <div class="cabecalho">
         <img src="menu.png" width="350px" class="menu">
     </div>
@@ -15,16 +15,22 @@
     <div class="tudo">
         
         <div class="titulo" >
-        Observações Importantes
+        Objetos Recolhidos 
         </div>
 
-    <br>
+        <br> 
+    
+        <form action="inserir.php" method="post">
         <div class="caixa-prox">
-            <input type="text" class="caixa-larga" placeholder="Digite as observaçoes..."> 
-            <button class="prox">Proximo</button>
+            <input type="text" class="caixa-larga" name="objetos" placeholder="Digite os objetos recolhidos...">
+            <input type="submit" class="button" name="objetos"  /> 
         </div>
+        </form>
     </div>
    
 
+    
+    
+    
 </body>
 </html>
