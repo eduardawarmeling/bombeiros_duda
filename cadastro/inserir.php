@@ -10,9 +10,10 @@ $usuario = $_POST["usuario"];
 
 include("conecta.php");
 
-    $comando = $pdo->prepare("INSERT INTO cadastrobomb(cpf,email, senha, nome, telefone, usuario) VALUES (\"$cpf\", \"$email\", \"$senha\", \"$nome\", \"$telefone\", \"$usuario\")");
+    $comando = $pdo->prepare("INSERT INTO cadastro_bombeiro(cpf,email, senha, nome, telefone, usuario) VALUES (\"$cpf\", \"$email\", \"$senha\", \"$nome\", \"$telefone\", \"$usuario\")");
 
     $resultado = $comando->execute();
     echo("{\"resultado\":1}"); 
 
+    header("Location: login/login.html");
 ?>
